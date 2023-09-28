@@ -1,0 +1,52 @@
+.related-work-title {
+	margin-left:12.5px;
+	margin-bottom:20px;
+}
+
+.pagination-single-inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+
+	@media (max-width: 650px) {
+		justify-content: center;
+	}
+
+	img {
+		display: block;
+	}
+
+	.column {
+		max-width:300px;
+		margin-bottom:20px;
+
+		@include for-tablet-portrait-up {
+			margin-inline:12.5px;
+		}
+
+		a:hover, a:hover span {
+			color: $secondary;
+		}
+
+		.title {
+			line-height: 1;
+		}
+
+		.post_date {
+			margin-top:15px;
+			margin-bottom:5px;
+			line-height:1;
+			color: $primary-light;
+			font-size:0.93rem;
+			font-weight:300;
+			text-transform: uppercase;
+		}
+
+		.excerpt {
+			font-size: 1.3rem;
+			font-weight: 300;
+			margin-top: 20px;
+		}
+	}
+}
+
