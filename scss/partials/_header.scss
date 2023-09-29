@@ -1,5 +1,10 @@
 #site-header {
 
+	@include for-tablet-portrait-down {
+		border-bottom:1px solid $primary-light;
+		margin-bottom:40px;
+	}
+
 	.header-inner {
 		display: flex;
 		align-items: center;

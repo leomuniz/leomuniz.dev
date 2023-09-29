@@ -112,6 +112,13 @@ button[type="submit"] {
   color: #020616 !important;
 }
 
+@media (max-width: 899px) {
+  #site-header {
+    border-bottom: 1px solid #D1D5DB;
+    margin-bottom: 40px;
+  }
+}
+
 #site-header .header-inner {
   display: flex;
   align-items: center;
