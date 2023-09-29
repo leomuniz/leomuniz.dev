@@ -167,13 +167,6 @@ button[type="submit"] {
   }
 }
 
-@media (max-width: 599px) {
-  #site-header .header-inner nav.primary-menu-wrapper ul {
-    margin-bottom: 20px;
-    border-bottom: 1px solid;
-  }
-}
-
 #site-header .header-inner nav.primary-menu-wrapper ul li {
   position: relative;
   display: inline-block;
