@@ -15,6 +15,18 @@
 
 	<head>
 
+		<?php if ( defined( 'GA4_PROPERTY' ) ) : ?>
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GA4_PROPERTY; ?>"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', '<?php echo GA4_PROPERTY; ?>' );
+			</script>
+		<?php endif; ?>
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
