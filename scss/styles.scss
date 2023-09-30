@@ -24,6 +24,17 @@ body {
 	font-size:1.6rem;
 	line-height:1.5;
 	font-family: $sans-serif;
+
+	// Scroll behavior for home page.
+	&.home {
+		#site-header{
+			scroll-snap-align:start;
+		}
+		
+		article:not(:first-of-type) {
+			scroll-snap-align: start;
+		}
+	}
 }
 
 * {
@@ -36,14 +47,6 @@ a {
 	&:hover {
 		color:$primary-light;
 	}
-}
-
-#site-header{
-	scroll-snap-align:start;
-}
-
-article:not(:first-of-type) {
-	scroll-snap-align: start;
 }
 
 strong {

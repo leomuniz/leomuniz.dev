@@ -65,6 +65,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body.home #site-header {
+  scroll-snap-align: start;
+}
+
+body.home article:not(:first-of-type) {
+  scroll-snap-align: start;
+}
+
 * {
   color: #FFFFFF;
 }
@@ -75,14 +83,6 @@ a {
 
 a:hover {
   color: #D1D5DB;
-}
-
-#site-header {
-  scroll-snap-align: start;
-}
-
-article:not(:first-of-type) {
-  scroll-snap-align: start;
 }
 
 strong {
