@@ -391,8 +391,14 @@ article.portfolio:nth-child(n+3) {
 .entry-content.tags {
   text-align: right;
   margin-bottom: 15px;
-  line-height: 1;
+  line-height: 1.4;
   margin-top: -20px;
+}
+
+@media (max-width: 599px) {
+  .entry-content.tags {
+    padding-left: 30%;
+  }
 }
 
 .entry-content.tags .portfolio_tag {

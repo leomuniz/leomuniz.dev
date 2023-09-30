@@ -89,8 +89,12 @@ article.portfolio:nth-child(n+3) {
 	&.tags {
 		text-align: right;
 		margin-bottom: 15px;
-  		line-height: 1;
+  		line-height: 1.4;
   		margin-top: -20px;
+
+		@include for-phone-only {
+			padding-left:30%;
+		}
 
 		.portfolio_tag {
 			color: $background-color;
