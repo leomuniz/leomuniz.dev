@@ -3,6 +3,8 @@
 @import 'partials/variables';
 
 html { 
+	scroll-snap-type:y mandatory;
+	scroll-snap-stop:always;
 	scroll-behavior: smooth;
 
 	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
@@ -34,6 +36,14 @@ a {
 	&:hover {
 		color:$primary-light;
 	}
+}
+
+#site-header{
+	scroll-snap-align:start;
+}
+
+article:not(:first-of-type) {
+	scroll-snap-align: start;
 }
 
 strong {

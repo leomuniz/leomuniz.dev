@@ -40,6 +40,8 @@ table {
 }
 
 html {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
   scroll-behavior: smooth;
   font-size: 74%;
 }
@@ -73,6 +75,14 @@ a {
 
 a:hover {
   color: #D1D5DB;
+}
+
+#site-header {
+  scroll-snap-align: start;
+}
+
+article:not(:first-of-type) {
+  scroll-snap-align: start;
 }
 
 strong {
