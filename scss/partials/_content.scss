@@ -120,17 +120,24 @@ article.portfolio:nth-child(n+3) {
 			display:flex;
 			flex-wrap:wrap;
 			gap: 20px;
+			margin-top:20px;
+			margin-bottom:20px;
 
 			li {
 				border: 1px solid $dove-gray;
 				padding: 20px;
 				text-align: center;
 				border-radius: 10px;
-				width: 250px;
+				width: 273px;
 				display: flex;
 				align-content: center;
 				justify-content: center;
 				flex-direction: column;
+
+				@include for-content-holder-down {
+					width:auto;
+					flex-grow:1;
+				}
 
 				& > * {
 					display:contents;
