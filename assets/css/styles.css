@@ -122,6 +122,11 @@ button[type="submit"] {
   color: #020616 !important;
 }
 
+.wp-block-social-links .wp-social-link svg {
+  height: 2em;
+  width: 2em;
+}
+
 @media (max-width: 899px) {
   #site-header {
     border-bottom: 1px solid #D1D5DB;

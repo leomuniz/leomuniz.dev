@@ -88,6 +88,11 @@ button[type="submit"] {
 	
 }
 
+.wp-block-social-links .wp-social-link svg {
+	height:2em;
+	width:2em;
+}
+
 @import 'partials/header';
 @import 'partials/content';
 @import 'partials/pagination';
