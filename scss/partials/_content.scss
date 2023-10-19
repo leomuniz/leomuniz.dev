@@ -114,6 +114,30 @@ article.portfolio:nth-child(n+3) {
 		li { 
 			color: $primary-light;
 		}
+
+		&.card-list {
+			list-style:none;
+			display:flex;
+			flex-wrap:wrap;
+			gap: 20px;
+
+			li {
+				border: 1px solid $dove-gray;
+				padding: 20px;
+				text-align: center;
+				border-radius: 10px;
+				width: 250px;
+				display: flex;
+				align-content: center;
+				justify-content: center;
+				flex-direction: column;
+
+				& > * {
+					display:contents;
+				}
+			}
+
+		}
 	}
 
 	.wp-block-quote {
