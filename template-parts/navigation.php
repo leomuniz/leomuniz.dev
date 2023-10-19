@@ -41,7 +41,7 @@ if ( $next_post || $prev_post ) {
 					</a>
 					
 					<div class="post_date">
-						<?php the_time( get_option( 'date_format' ), $prev_post->ID ); ?>
+						<?php echo get_the_time( get_option( 'date_format' ), $prev_post->ID ); ?>
 					</div>
 					
 					<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
@@ -49,7 +49,7 @@ if ( $next_post || $prev_post ) {
 					</a>
 
 					<div class="excerpt">
-						<?php the_excerpt( $prev_post->ID ); ?>
+						<?php echo get_the_excerpt( $prev_post->ID ); ?>
 					</div>
 				</div>
 
@@ -64,7 +64,7 @@ if ( $next_post || $prev_post ) {
 					</a>
 
 					<div class="post_date">
-						<?php the_time( get_option( 'date_format' ), $next_post->ID ); ?>
+						<?php echo get_the_time( get_option( 'date_format' ), $next_post->ID ); ?>
 					</div>
 
 					<a class="next-post" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
@@ -72,7 +72,7 @@ if ( $next_post || $prev_post ) {
 					</a>
 					
 					<div class="excerpt">
-						<?php the_excerpt( $next_post->ID ); ?>
+						<?php echo get_the_excerpt( $next_post->ID ); ?>
 					</div>
 				</div>
 				<?php
