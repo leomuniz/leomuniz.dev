@@ -118,7 +118,6 @@ article.portfolio:nth-child(n+3) {
 		font-size:1.3rem;
 		font-weight:300;
 		margin:30px 0px;
-		width:100%;
 
 		&:first-of-type {
 			margin-top:0px;
@@ -130,6 +129,7 @@ article.portfolio:nth-child(n+3) {
 		margin-top: 0px;
 		padding:0px;
   		line-height: 1.4;
+		width:100%;
   		
 		.portfolio_tag {
 			color: $ghost-white;
