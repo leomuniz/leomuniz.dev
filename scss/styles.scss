@@ -92,6 +92,12 @@ button[type="submit"] {
 	
 }
 
+iframe { // for youtube embeds
+	width: 100% !important;
+	aspect-ratio: 5/2.8 !important;
+	height: auto !important;
+}
+
 .wp-block-social-links .wp-social-link svg {
 	height:2em;
 	width:2em;
