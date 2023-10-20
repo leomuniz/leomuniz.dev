@@ -125,6 +125,17 @@ iframe[src*="youtube.com"] {
   width: 2em;
 }
 
+div.wpforms-container-full .wpforms-confirmation-container-full {
+  background: none !important;
+  border: 1px solid #666666 !important;
+  border-radius: 6px;
+  text-align: center;
+}
+
+div.wpforms-container-full .wpforms-confirmation-container-full p {
+  color: #FF9900;
+}
+
 @media (max-width: 899px) {
   #site-header {
     border-bottom: 1px solid #D1D5DB;
