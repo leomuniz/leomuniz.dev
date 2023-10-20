@@ -361,6 +361,8 @@ article.portfolio:nth-child(n+3) {
   font-weight: 300;
   line-height: normal;
   text-decoration: none;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 .post .entry-header .portfolio_custom_link a:after, .portfolio .entry-header .portfolio_custom_link a:after, .page .entry-header .portfolio_custom_link a:after {
