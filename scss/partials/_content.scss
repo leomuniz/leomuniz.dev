@@ -15,13 +15,13 @@
 article.portfolio {
 
 	&:nth-child(n+3) {
-		margin-top: 30px !important;
+		margin-top: 20px !important;
 	}
 
 	hr.article-sep {
 		margin-top:15px;
 		width:25%;
-		color: $dove-gray;
+		color: $dark-charcoal
 	}
 }
 
