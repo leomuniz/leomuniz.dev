@@ -7,8 +7,6 @@ html {
 	scroll-snap-stop:always;
 	scroll-behavior: smooth;
 	overscroll-behavior: none;
-	height: 100%;
-    overflow: hidden;
 
 	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
 	font-size:74%;
@@ -23,6 +21,11 @@ html {
 }
 
 body {
+	scroll-snap-type:y mandatory;
+	scroll-snap-stop:always;
+	scroll-behavior: smooth;
+	overscroll-behavior: none;
+
 	background-color: $background-color;
 	font-size:1.6rem;
 	line-height:1.5;

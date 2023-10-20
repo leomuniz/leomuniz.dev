@@ -44,8 +44,6 @@ html {
   scroll-snap-stop: always;
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  height: 100%;
-  overflow: hidden;
   font-size: 74%;
 }
 
@@ -62,6 +60,10 @@ html {
 }
 
 body {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
   background-color: #020616;
   font-size: 1.6rem;
   line-height: 1.5;
