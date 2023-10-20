@@ -40,12 +40,6 @@ table {
 }
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
-  height: 100%;
-  overflow: hidden;
   font-size: 74%;
 }
 
@@ -66,8 +60,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-  height: 100%;
-  overflow: auto;
 }
 
 body.home #site-header {
