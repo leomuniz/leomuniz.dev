@@ -33,24 +33,28 @@
 			}
 			?>
 
-			<?php if ( is_home() ) : ?>	
-				<a href="<?php echo esc_url( get_permalink() ) ?>" class="button cta">Read more about this project</a>
-			<?php endif; ?>
-
 		</div><!-- .entry-content -->
 
+		<div class="entry-content footer-content">
+		<div class="entry-content tags">
+			<div class="tags-container">
 		<?php
 			$tags = get_the_terms( get_the_ID(), 'tag' );
 
 			if ( ! empty( $tags ) ) : 
-		?>
-			<div class="entry-content tags">
-				<?php foreach ( $tags as $tag ) : ?>
+				foreach ( $tags as $tag ) : ?>
 					<span class="portfolio_tag"><?php echo $tag->name; ?></span>
 				<?php endforeach; ?>
+			<?php endif; ?>
 			</div>
+		</div>
 
+		<div class="cta-container">
+		<?php if ( is_home() ) : ?>	
+			<a href="<?php echo esc_url( get_permalink() ) ?>" class="button cta">Read more about this project</a>
 		<?php endif; ?>
+		</div>
+		</div>
 	</div><!-- .post-inner -->
 
 	<div class="section-inner">

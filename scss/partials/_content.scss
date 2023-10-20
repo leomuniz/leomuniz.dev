@@ -71,8 +71,28 @@ article.portfolio:nth-child(n+3) {
 
 .entry-content {
 	font-size:1.6rem;
-	margin:30px 0px 0px;
+	margin:15px 0px 0px;
 	padding:0px 20px;
+
+	&.footer-content {
+		display:flex;
+		gap:14px 20px;
+		margin-bottom:25px;
+
+		@include for-phone-only {
+			flex-wrap:wrap;
+
+			.tags-container {
+				width:85%;
+			}
+
+			.cta-container {
+				flex-grow:1;
+				text-align: right;
+			}
+		}
+
+	}
 
 	a.button { 
 		padding: 10px 20px;
@@ -81,6 +101,7 @@ article.portfolio:nth-child(n+3) {
 		background-color: $secondary;
 		color: #333;
 		border-radius: 5px;
+		white-space:nowrap;
 
 		&:hover {
 			color:#333;
@@ -101,15 +122,11 @@ article.portfolio:nth-child(n+3) {
 	}
 
 	&.tags {
-		text-align: right;
-		margin-bottom: 15px;
+		margin-bottom:0px;
+		margin-top: 0px;
+		padding:0px;
   		line-height: 1.4;
-  		margin-top: 10px;
-
-		@include for-phone-only {
-			padding-left:30%;
-		}
-
+  		
 		.portfolio_tag {
 			color: $ghost-white;
 			font-size: 1rem;
@@ -118,6 +135,8 @@ article.portfolio:nth-child(n+3) {
 			border:1px solid $dark-gray;
 			background: $dark-charcoal;
 			padding: 2px 10px 1px;
+			white-space: nowrap;
+			vertical-align:6px;
 		}
 
 		&:hover {
