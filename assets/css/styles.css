@@ -40,10 +40,6 @@ table {
 }
 
 html {
-  scroll-snap-type: y proximity;
-  scroll-snap-stop: always;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
   font-size: 74%;
 }
 
@@ -64,14 +60,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-}
-
-body.home #site-header {
-  scroll-snap-align: start;
-}
-
-body.home article:not(:first-of-type) {
-  scroll-snap-align: start;
 }
 
 * {

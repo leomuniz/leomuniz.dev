@@ -3,10 +3,10 @@
 @import 'partials/variables';
 
 html { 
-	scroll-snap-type:y proximity;
-	scroll-snap-stop:always;
-	scroll-behavior: smooth;
-	overscroll-behavior: none;
+	// scroll-snap-type:y proximity;
+	// scroll-snap-stop:always;
+	// scroll-behavior: smooth;
+	// overscroll-behavior: none;
 
 	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
 	font-size:74%;
@@ -27,15 +27,15 @@ body {
 	font-family: $sans-serif;
 
 	// Scroll behavior for home page.
-	&.home {
-		#site-header{
-			scroll-snap-align:start;
-		}
+	// &.home {
+	// 	#site-header{
+	// 		scroll-snap-align:start;
+	// 	}
 		
-		article:not(:first-of-type) {
-			scroll-snap-align: start;
-		}
-	}
+	// 	article:not(:first-of-type) {
+	// 		scroll-snap-align: start;
+	// 	}
+	// }
 }
 
 * {
