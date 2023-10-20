@@ -132,6 +132,12 @@ iframe[src*="youtube.com"] {
   }
 }
 
+@media (max-width: 599px) {
+  #site-header {
+    margin-bottom: 15px;
+  }
+}
+
 #site-header .header-inner {
   display: flex;
   align-items: center;

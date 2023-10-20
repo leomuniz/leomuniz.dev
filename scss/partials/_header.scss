@@ -5,6 +5,10 @@
 		margin-bottom:40px;
 	}
 
+	@include for-phone-only {
+		margin-bottom:15px;
+	}
+
 	.header-inner {
 		display: flex;
 		align-items: center;
