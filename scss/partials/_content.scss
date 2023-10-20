@@ -7,19 +7,19 @@
 
 	.entry-content {
 		border-bottom:1px solid $primary-light;
-		margin-bottom:30px;
+		margin-bottom:20px;
 		padding-bottom:15px;
 	}
 }
 
 article.portfolio {
 
-	&:nth-child(n+3) {
-		margin-top: 20px !important;
-	}
+	// &:nth-child(n+3) {
+	// 	margin-top: 20px !important;
+	// }
 
 	hr.article-sep {
-		margin-top:15px;
+		margin-top:20px;
 		width:25%;
 		color: $dark-charcoal
 	}
