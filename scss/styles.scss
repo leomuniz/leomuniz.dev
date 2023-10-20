@@ -92,7 +92,7 @@ button[type="submit"] {
 	
 }
 
-iframe { // for youtube embeds
+iframe[src*="youtube.com"] { // for youtube embeds
 	width: 100% !important;
 	aspect-ratio: 5/2.8 !important;
 	height: auto !important;
