@@ -33,6 +33,10 @@
 			}
 			?>
 
+			<?php if ( is_home() ) : ?>	
+				<a href="<?php echo esc_url( get_permalink() ) ?>" class="button cta">Read more about this project</a>
+			<?php endif; ?>
+
 		</div><!-- .entry-content -->
 
 		<?php
