@@ -7,6 +7,8 @@ html {
 	scroll-snap-stop:always;
 	scroll-behavior: smooth;
 	overscroll-behavior: none;
+	height: 100%;
+    overflow: hidden;
 
 	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
 	font-size:74%;
@@ -25,6 +27,8 @@ body {
 	font-size:1.6rem;
 	line-height:1.5;
 	font-family: $sans-serif;
+	height: 100%;
+    overflow: auto;
 
 	// Scroll behavior for home page.
 	&.home {
