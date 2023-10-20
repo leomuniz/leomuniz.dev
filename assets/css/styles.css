@@ -40,7 +40,7 @@ table {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-snap-stop: always;
   scroll-behavior: smooth;
   overscroll-behavior: none;
@@ -60,10 +60,6 @@ html {
 }
 
 body {
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
   background-color: #020616;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -84,6 +80,9 @@ body.home article:not(:first-of-type) {
 
 a {
   color: #FFFFFF;
+  max-width: 100%;
+  display: inline-block;
+  white-space: normal;
 }
 
 a:hover {
