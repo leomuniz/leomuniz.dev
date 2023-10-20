@@ -50,7 +50,7 @@
 		</div>
 
 		<div class="cta-container">
-		<?php if ( is_home() ) : ?>	
+		<?php if ( is_home() ) : ?>
 			<a href="<?php echo esc_url( get_permalink() ) ?>" class="button cta">Read more about this project</a>
 		<?php endif; ?>
 		</div>
@@ -110,5 +110,9 @@
 		<?php
 	}
 	?>
+
+	<?php if ( is_home() ) : ?>
+		<hr class="article-sep">
+	<?php endif; ?>
 
 </article><!-- .post -->

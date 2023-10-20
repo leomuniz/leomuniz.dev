@@ -133,7 +133,7 @@ iframe[src*="youtube.com"] {
 }
 
 @media (max-width: 599px) {
-  #site-header {
+  .single-portfolio #site-header {
     margin-bottom: 15px;
   }
 }
@@ -323,7 +323,13 @@ iframe[src*="youtube.com"] {
 }
 
 article.portfolio:nth-child(n+3) {
-  margin-top: 40px !important;
+  margin-top: 30px !important;
+}
+
+article.portfolio hr.article-sep {
+  margin-top: 15px;
+  width: 25%;
+  color: #666666;
 }
 
 .post .entry-header, .portfolio .entry-header, .page .entry-header {

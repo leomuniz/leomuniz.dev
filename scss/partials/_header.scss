@@ -6,7 +6,9 @@
 	}
 
 	@include for-phone-only {
-		margin-bottom:15px;
+		.single-portfolio & { // single-portfolio is parent of #site-header
+			margin-bottom:15px;
+		}
 	}
 
 	.header-inner {

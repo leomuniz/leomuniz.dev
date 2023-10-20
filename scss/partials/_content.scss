@@ -12,8 +12,17 @@
 	}
 }
 
-article.portfolio:nth-child(n+3) {
-	margin-top: 40px !important;
+article.portfolio {
+
+	&:nth-child(n+3) {
+		margin-top: 30px !important;
+	}
+
+	hr.article-sep {
+		margin-top:15px;
+		width:25%;
+		color: $dove-gray;
+	}
 }
 
 .post .entry-header, .portfolio .entry-header, .page .entry-header {
