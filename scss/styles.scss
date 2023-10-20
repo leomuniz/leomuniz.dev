@@ -6,6 +6,7 @@ html {
 	scroll-snap-type:y mandatory;
 	scroll-snap-stop:always;
 	scroll-behavior: smooth;
+	overscroll-behavior: none;
 
 	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
 	font-size:74%;
